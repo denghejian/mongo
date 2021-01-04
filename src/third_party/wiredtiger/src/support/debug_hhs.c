@@ -2,6 +2,5 @@
 
 
 FILE *log_file_fp = NULL;
-const char log_file_path[] = "log.log";
+const char log_file_path[] = "/home/denghejian/mongodb_log/total_log.log";
 int Debug_Level = 0;
-MyStatistic* m_stat = NULL; 

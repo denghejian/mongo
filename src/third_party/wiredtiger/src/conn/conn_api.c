@@ -2343,8 +2343,10 @@ wiredtiger_open(const char *home, WT_EVENT_HANDLER *event_handler, const char *c
     WT_SESSION_IMPL *verify_session;
 #endif
 
+    printf("denghejian debug: check MYDEBUG\n");
 #ifdef MYDEBUG
-    if(log_file_fp != NULL) DebugInit();
+    printf("denghejian debug: MYDEBUG is on\n");
+    DebugInit();
 #endif
     /* Leave lots of space for optional additional configuration. */
     const char *cfg[] = {NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL};

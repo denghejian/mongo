@@ -44,7 +44,11 @@ static inline unsigned int get_tid(){
         if(log_file_fp == NULL){
             printf("creat log_file_fp: %s error!\n",log_file_path);
             //exit(0);
+        } else
+        {
+            printf("creat log_file_fp: %s ok!\n",log_file_path);
         }
+        
     }
 
     static inline void DebugDestroy() {
